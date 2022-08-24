@@ -73,7 +73,7 @@ public class ParkingDataBaseIT {
         testParkingACar();
         ParkingService parkingService = new ParkingService(inputReaderUtil, parkingSpotDAO, ticketDAO);
         try {
-            TimeUnit.SECONDS.sleep(1860);
+            TimeUnit.SECONDS.sleep(1);
             parkingService.processExitingVehicle();
             TimeUnit.SECONDS.sleep(1);
         } catch (InterruptedException e) {
@@ -84,7 +84,7 @@ public class ParkingDataBaseIT {
         Assertions.assertNotNull(ticket.getOutTime());
         double duration = SECONDS.between(ticket.getInTime().toInstant(), ticket.getOutTime().toInstant()) ;
         Assertions.assertEquals( round((duration > (30.0 * 60.0 )) ? (((duration / (60.0 * 60.0 ))) * Fare.CAR_RATE_PER_HOUR) : 0),round(ticket.getPrice()));
-  
+
     }
 
 }

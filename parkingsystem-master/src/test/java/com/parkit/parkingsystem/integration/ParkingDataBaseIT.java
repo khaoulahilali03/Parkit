@@ -1,5 +1,6 @@
 package com.parkit.parkingsystem.integration;
 
+import com.parkit.parkingsystem.constants.Fare;
 import com.parkit.parkingsystem.constants.ParkingType;
 import com.parkit.parkingsystem.dao.ParkingSpotDAO;
 import com.parkit.parkingsystem.dao.TicketDAO;
@@ -13,6 +14,11 @@ import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+
+import java.util.concurrent.TimeUnit;
+
+import static java.lang.Math.round;
+import static java.time.temporal.ChronoUnit.SECONDS;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -66,8 +72,19 @@ public class ParkingDataBaseIT {
     public void testParkingLotExit(){
         testParkingACar();
         ParkingService parkingService = new ParkingService(inputReaderUtil, parkingSpotDAO, ticketDAO);
-        parkingService.processExitingVehicle();
+        try {
+            TimeUnit.SECONDS.sleep(1860);
+            parkingService.processExitingVehicle();
+            TimeUnit.SECONDS.sleep(1);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         //TODO: check that the fare generated and out time are populated correctly in the database
+        ticket = ticketDAO.getTicket("ABCDEF");
+        Assertions.assertNotNull(ticket.getOutTime());
+        double duration = SECONDS.between(ticket.getInTime().toInstant(), ticket.getOutTime().toInstant()) ;
+        Assertions.assertEquals( round((duration > (30.0 * 60.0 )) ? (((duration / (60.0 * 60.0 ))) * Fare.CAR_RATE_PER_HOUR) : 0),round(ticket.getPrice()));
+  
     }
 
 }

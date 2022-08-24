@@ -11,7 +11,6 @@ import com.parkit.parkingsystem.model.Ticket;
 import com.parkit.parkingsystem.service.ParkingService;
 import com.parkit.parkingsystem.util.InputReaderUtil;
 import org.junit.jupiter.api.*;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
@@ -88,34 +87,6 @@ public class ParkingDataBaseIT {
 
     }
 
-   /* @Test
-    public void testParkingReccuringCar(){
-        ParkingService parkingService = new ParkingService(inputReaderUtil, parkingSpotDAO, ticketDAO);
-        ticket = ticketDAO.getTicket("ABCDEF");
-        Assertions.assertFalse(ticketDAO.checkIfReccurent(ticket));
-        parkingService.processIncomingVehicle();
-        try{
-            TimeUnit.SECONDS.sleep(1);
-            parkingService.processExitingVehicle();
-            TimeUnit.SECONDS.sleep(1);
-        }catch (InterruptedException e){
-            e.printStackTrace();
-        }
-        ticket = ticketDAO.getTicket("ABCDEF");
-        parkingService.processIncomingVehicle();
-        Assertions.assertTrue(ticketDAO.checkIfReccurent(ticket));
-        try{
-            TimeUnit.SECONDS.sleep(1);
-            parkingService.processExitingVehicle();
-            TimeUnit.SECONDS.sleep(1);
-        }catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-    }
-
-    */
-
     @Test
     public void testParkingReccuringCar() {
         ParkingService parkingService = new ParkingService(inputReaderUtil, parkingSpotDAO, ticketDAO);
@@ -133,7 +104,7 @@ public class ParkingDataBaseIT {
         parkingService.processIncomingVehicle();
         Assertions.assertTrue(ticketDAO.checkIfReccurent(ticket), "Welcome back! As a recurring user of our parking lot, you'll benefit from a 5% discount.");
         try {
-            TimeUnit.SECONDS.sleep(1860);
+            TimeUnit.SECONDS.sleep(1);
             parkingService.processExitingVehicle();
             TimeUnit.SECONDS.sleep(1);
         } catch (InterruptedException e) {

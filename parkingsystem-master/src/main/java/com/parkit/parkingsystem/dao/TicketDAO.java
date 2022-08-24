@@ -86,4 +86,25 @@ public class TicketDAO {
         }
         return false;
     }
+
+    public boolean checkIfReccurent(Ticket ticket){
+        Connection con = null;
+        boolean isReccurent = false;
+        try{
+            con = dataBaseConfig.getConnection();
+            PreparedStatement ps = con.prepareStatement(DBConstants.CHECK_IF_RECCURENT);
+            ps.setString(1, ticket.getVehicleRegNumber());
+            ResultSet rs = ps.executeQuery();
+            if (rs.next()){
+                isReccurent = true;
+            }
+            dataBaseConfig.closeResultSet(rs);
+            dataBaseConfig.closePreparedStatement(ps);
+        }catch (Exception ex){
+            logger.error("Error saving ticket info",ex);
+        }finally {
+            dataBaseConfig.closeConnection(con);
+        }
+        return isReccurent;
+    }
 }

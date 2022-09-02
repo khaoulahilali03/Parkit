@@ -1,0 +1,1200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.4.2" sequence="0" timestamp="1662070915108" analysisTimestamp="1662070913389" release="">
+  <Project projectName="parkingsystem-master[parking-system]">
+    <Jar>D:\OPC\Formation_Java\P4\Parkit\parkingsystem-master\target\classes\com\parkit\parkingsystem\App.class</Jar>
+    <Jar>D:\OPC\Formation_Java\P4\Parkit\parkingsystem-master\target\classes\com\parkit\parkingsystem\config\DataBaseConfig.class</Jar>
+    <Jar>D:\OPC\Formation_Java\P4\Parkit\parkingsystem-master\target\classes\com\parkit\parkingsystem\constants\DBConstants.class</Jar>
+    <Jar>D:\OPC\Formation_Java\P4\Parkit\parkingsystem-master\target\classes\com\parkit\parkingsystem\constants\Fare.class</Jar>
+    <Jar>D:\OPC\Formation_Java\P4\Parkit\parkingsystem-master\target\classes\com\parkit\parkingsystem\constants\ParkingType.class</Jar>
+    <Jar>D:\OPC\Formation_Java\P4\Parkit\parkingsystem-master\target\classes\com\parkit\parkingsystem\dao\ParkingSpotDAO.class</Jar>
+    <Jar>D:\OPC\Formation_Java\P4\Parkit\parkingsystem-master\target\classes\com\parkit\parkingsystem\dao\TicketDAO.class</Jar>
+    <Jar>D:\OPC\Formation_Java\P4\Parkit\parkingsystem-master\target\classes\com\parkit\parkingsystem\model\ParkingSpot.class</Jar>
+    <Jar>D:\OPC\Formation_Java\P4\Parkit\parkingsystem-master\target\classes\com\parkit\parkingsystem\model\Ticket.class</Jar>
+    <Jar>D:\OPC\Formation_Java\P4\Parkit\parkingsystem-master\target\classes\com\parkit\parkingsystem\service\FareCalculatorService$1.class</Jar>
+    <Jar>D:\OPC\Formation_Java\P4\Parkit\parkingsystem-master\target\classes\com\parkit\parkingsystem\service\FareCalculatorService.class</Jar>
+    <Jar>D:\OPC\Formation_Java\P4\Parkit\parkingsystem-master\target\classes\com\parkit\parkingsystem\service\InteractiveShell.class</Jar>
+    <Jar>D:\OPC\Formation_Java\P4\Parkit\parkingsystem-master\target\classes\com\parkit\parkingsystem\service\ParkingService.class</Jar>
+    <Jar>D:\OPC\Formation_Java\P4\Parkit\parkingsystem-master\target\classes\com\parkit\parkingsystem\util\InputReaderUtil.class</Jar>
+    <Jar>D:\OPC\Formation_Java\P4\Parkit\parkingsystem-master\target\test-classes\com\parkit\parkingsystem\FareCalculatorServiceTest.class</Jar>
+    <Jar>D:\OPC\Formation_Java\P4\Parkit\parkingsystem-master\target\test-classes\com\parkit\parkingsystem\integration\config\DataBaseTestConfig.class</Jar>
+    <Jar>D:\OPC\Formation_Java\P4\Parkit\parkingsystem-master\target\test-classes\com\parkit\parkingsystem\integration\ParkingDataBaseIT.class</Jar>
+    <Jar>D:\OPC\Formation_Java\P4\Parkit\parkingsystem-master\target\test-classes\com\parkit\parkingsystem\integration\service\DataBasePrepareService.class</Jar>
+    <Jar>D:\OPC\Formation_Java\P4\Parkit\parkingsystem-master\target\test-classes\com\parkit\parkingsystem\ParkingServiceTest.class</Jar>
+    <AuxClasspathEntry>D:/OPC/Formation_Java/P4/Parkit/parkingsystem-master/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:/OPC/Formation_Java/P4/Parkit/parkingsystem-master/target/test-classes</AuxClasspathEntry>
+    <SrcDir>D:/OPC/Formation_Java/P4/Parkit/parkingsystem-master/src/main/resources</SrcDir>
+    <SrcDir>D:/OPC/Formation_Java/P4/Parkit/parkingsystem-master/src/main/java</SrcDir>
+    <SrcDir>D:/OPC/Formation_Java/P4/Parkit/parkingsystem-master/src/test/java</SrcDir>
+  </Project>
+  <BugInstance type="DMI_CONSTANT_DB_PASSWORD" priority="2" rank="7" abbrev="Dm" category="SECURITY" instanceHash="4e3dff58bb02764d5ac574fa6f4e300c" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="259">
+    <ShortMessage>Hardcoded constant database password</ShortMessage>
+    <LongMessage>Hardcoded constant database password in com.parkit.parkingsystem.config.DataBaseConfig.getConnection()</LongMessage>
+    <Class classname="com.parkit.parkingsystem.config.DataBaseConfig" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.config.DataBaseConfig" sourcefile="DataBaseConfig.java" sourcepath="com/parkit/parkingsystem/config/DataBaseConfig.java" relSourcepath="main\java\com\parkit\parkingsystem\config\DataBaseConfig.java">
+        <Message>In DataBaseConfig.java</Message>
+      </SourceLine>
+      <Message>In class com.parkit.parkingsystem.config.DataBaseConfig</Message>
+    </Class>
+    <Method classname="com.parkit.parkingsystem.config.DataBaseConfig" name="getConnection" signature="()Ljava/sql/Connection;" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.config.DataBaseConfig" start="13" end="15" startBytecode="0" endBytecode="10" sourcefile="DataBaseConfig.java" sourcepath="com/parkit/parkingsystem/config/DataBaseConfig.java" relSourcepath="main\java\com\parkit\parkingsystem\config\DataBaseConfig.java"/>
+      <Message>In method com.parkit.parkingsystem.config.DataBaseConfig.getConnection()</Message>
+    </Method>
+    <SourceLine classname="com.parkit.parkingsystem.config.DataBaseConfig" primary="true" start="15" end="15" startBytecode="22" endBytecode="22" sourcefile="DataBaseConfig.java" sourcepath="com/parkit/parkingsystem/config/DataBaseConfig.java" relSourcepath="main\java\com\parkit\parkingsystem\config\DataBaseConfig.java">
+      <Message>At DataBaseConfig.java:[line 15]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.config.DataBaseConfig" primary="true" start="15" end="15" startBytecode="22" endBytecode="22" sourcefile="DataBaseConfig.java" sourcepath="com/parkit/parkingsystem/config/DataBaseConfig.java" relSourcepath="main\java\com\parkit\parkingsystem\config\DataBaseConfig.java">
+      <Message>At DataBaseConfig.java:[line 15]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" instanceHash="258400fd68351acf9f79ee3e147bfb5f" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to clean up stream or resource on checked exception</ShortMessage>
+    <LongMessage>com.parkit.parkingsystem.dao.ParkingSpotDAO.getNextAvailableSlot(ParkingType) may fail to clean up java.sql.ResultSet on checked exception</LongMessage>
+    <Class classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java">
+        <Message>In ParkingSpotDAO.java</Message>
+      </SourceLine>
+      <Message>In class com.parkit.parkingsystem.dao.ParkingSpotDAO</Message>
+    </Class>
+    <Method classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" name="getNextAvailableSlot" signature="(Lcom/parkit/parkingsystem/constants/ParkingType;)I" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" start="20" end="37" startBytecode="0" endBytecode="392" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java"/>
+      <Message>In method com.parkit.parkingsystem.dao.ParkingSpotDAO.getNextAvailableSlot(ParkingType)</Message>
+    </Method>
+    <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.ResultSet" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java">
+        <Message>In ResultSet.java</Message>
+      </SourceLine>
+      <Message>Reference type java.sql.ResultSet</Message>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING">
+      <Message>1 instances of obligation remaining</Message>
+    </Int>
+    <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" primary="true" start="26" end="26" startBytecode="36" endBytecode="36" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at ParkingSpotDAO.java:[line 26] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" start="27" end="27" startBytecode="43" endBytecode="43" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at ParkingSpotDAO.java:[line 27]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" start="32" end="32" startBytecode="91" endBytecode="91" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at ParkingSpotDAO.java:[line 32]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" start="33" end="33" startBytecode="93" endBytecode="93" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at ParkingSpotDAO.java:[line 33]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" start="35" end="35" startBytecode="105" endBytecode="105" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at ParkingSpotDAO.java:[line 35]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" start="36" end="36" startBytecode="113" endBytecode="113" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at ParkingSpotDAO.java:[line 36]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" start="37" end="37" startBytecode="129" endBytecode="129" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at ParkingSpotDAO.java:[line 37]</Message>
+    </SourceLine>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS">
+      <Message>Remaining obligations: {Statement x 1,ResultSet x 1}</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" instanceHash="93cb0de03ca465ef227cb230a62e3d48" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to clean up stream or resource on checked exception</ShortMessage>
+    <LongMessage>com.parkit.parkingsystem.dao.ParkingSpotDAO.getNextAvailableSlot(ParkingType) may fail to clean up java.sql.Statement on checked exception</LongMessage>
+    <Class classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java">
+        <Message>In ParkingSpotDAO.java</Message>
+      </SourceLine>
+      <Message>In class com.parkit.parkingsystem.dao.ParkingSpotDAO</Message>
+    </Class>
+    <Method classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" name="getNextAvailableSlot" signature="(Lcom/parkit/parkingsystem/constants/ParkingType;)I" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" start="20" end="37" startBytecode="0" endBytecode="392" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java"/>
+      <Message>In method com.parkit.parkingsystem.dao.ParkingSpotDAO.getNextAvailableSlot(ParkingType)</Message>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java">
+        <Message>In Statement.java</Message>
+      </SourceLine>
+      <Message>Reference type java.sql.Statement</Message>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING">
+      <Message>1 instances of obligation remaining</Message>
+    </Int>
+    <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" primary="true" start="24" end="24" startBytecode="15" endBytecode="15" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at ParkingSpotDAO.java:[line 24] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" start="25" end="25" startBytecode="22" endBytecode="22" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at ParkingSpotDAO.java:[line 25]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" start="26" end="26" startBytecode="34" endBytecode="34" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at ParkingSpotDAO.java:[line 26]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" start="27" end="27" startBytecode="43" endBytecode="43" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at ParkingSpotDAO.java:[line 27]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" start="32" end="32" startBytecode="91" endBytecode="91" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at ParkingSpotDAO.java:[line 32]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" start="33" end="33" startBytecode="93" endBytecode="93" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at ParkingSpotDAO.java:[line 33]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" start="35" end="35" startBytecode="105" endBytecode="105" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at ParkingSpotDAO.java:[line 35]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" start="36" end="36" startBytecode="113" endBytecode="113" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at ParkingSpotDAO.java:[line 36]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" start="37" end="37" startBytecode="129" endBytecode="129" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at ParkingSpotDAO.java:[line 37]</Message>
+    </SourceLine>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS">
+      <Message>Remaining obligations: {Statement x 1,ResultSet x 1}</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" instanceHash="82e2c33f9912d3029aa480639b4f67f6" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to clean up stream or resource on checked exception</ShortMessage>
+    <LongMessage>com.parkit.parkingsystem.dao.ParkingSpotDAO.updateParking(ParkingSpot) may fail to clean up java.sql.Statement on checked exception</LongMessage>
+    <Class classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java">
+        <Message>In ParkingSpotDAO.java</Message>
+      </SourceLine>
+      <Message>In class com.parkit.parkingsystem.dao.ParkingSpotDAO</Message>
+    </Class>
+    <Method classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" name="updateParking" signature="(Lcom/parkit/parkingsystem/model/ParkingSpot;)Z" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" start="42" end="56" startBytecode="0" endBytecode="350" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java"/>
+      <Message>In method com.parkit.parkingsystem.dao.ParkingSpotDAO.updateParking(ParkingSpot)</Message>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java">
+        <Message>In Statement.java</Message>
+      </SourceLine>
+      <Message>Reference type java.sql.Statement</Message>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING">
+      <Message>1 instances of obligation remaining</Message>
+    </Int>
+    <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" primary="true" start="45" end="45" startBytecode="13" endBytecode="13" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at ParkingSpotDAO.java:[line 45] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" start="46" end="46" startBytecode="19" endBytecode="19" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at ParkingSpotDAO.java:[line 46]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" start="51" end="51" startBytecode="81" endBytecode="81" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at ParkingSpotDAO.java:[line 51]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" start="52" end="52" startBytecode="82" endBytecode="82" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at ParkingSpotDAO.java:[line 52]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" start="53" end="53" startBytecode="93" endBytecode="93" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at ParkingSpotDAO.java:[line 53]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" start="55" end="55" startBytecode="96" endBytecode="96" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at ParkingSpotDAO.java:[line 55]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.ParkingSpotDAO" start="53" end="53" startBytecode="104" endBytecode="104" sourcefile="ParkingSpotDAO.java" sourcepath="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at ParkingSpotDAO.java:[line 53]</Message>
+    </SourceLine>
+    <String value="{Statement x 1}" role="STRING_REMAINING_OBLIGATIONS">
+      <Message>Remaining obligations: {Statement x 1}</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="3ef21fbcf108d2a626515e048681ddaf" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.parkit.parkingsystem.dao.TicketDAO.saveTicket(Ticket)</LongMessage>
+    <Class classname="com.parkit.parkingsystem.dao.TicketDAO" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java">
+        <Message>In TicketDAO.java</Message>
+      </SourceLine>
+      <Message>In class com.parkit.parkingsystem.dao.TicketDAO</Message>
+    </Class>
+    <Method classname="com.parkit.parkingsystem.dao.TicketDAO" name="saveTicket" signature="(Lcom/parkit/parkingsystem/model/Ticket;)Z" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="23" end="39" startBytecode="0" endBytecode="75" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java"/>
+      <Message>In method com.parkit.parkingsystem.dao.TicketDAO.saveTicket(Ticket)</Message>
+    </Method>
+    <LocalVariable name="?" register="4" pc="114" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 4</Message>
+    </LocalVariable>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" primary="true" start="34" end="34" startBytecode="114" endBytecode="114" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java">
+      <Message>At TicketDAO.java:[line 34]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" primary="true" start="34" end="34" startBytecode="114" endBytecode="114" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java">
+      <Message>At TicketDAO.java:[line 34]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" instanceHash="d7109a33731b1966b67576da24773f05" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to clean up stream or resource</ShortMessage>
+    <LongMessage>com.parkit.parkingsystem.dao.TicketDAO.saveTicket(Ticket) may fail to clean up java.sql.Statement</LongMessage>
+    <Class classname="com.parkit.parkingsystem.dao.TicketDAO" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java">
+        <Message>In TicketDAO.java</Message>
+      </SourceLine>
+      <Message>In class com.parkit.parkingsystem.dao.TicketDAO</Message>
+    </Class>
+    <Method classname="com.parkit.parkingsystem.dao.TicketDAO" name="saveTicket" signature="(Lcom/parkit/parkingsystem/model/Ticket;)Z" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="23" end="39" startBytecode="0" endBytecode="417" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java"/>
+      <Message>In method com.parkit.parkingsystem.dao.TicketDAO.saveTicket(Ticket)</Message>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java">
+        <Message>In Statement.java</Message>
+      </SourceLine>
+      <Message>Reference type java.sql.Statement</Message>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING">
+      <Message>1 instances of obligation remaining</Message>
+    </Int>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" primary="true" start="26" end="26" startBytecode="13" endBytecode="13" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at TicketDAO.java:[line 26] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="29" end="29" startBytecode="19" endBytecode="19" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 29]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="30" end="30" startBytecode="33" endBytecode="33" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 30]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="31" end="31" startBytecode="44" endBytecode="44" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 31]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="32" end="32" startBytecode="55" endBytecode="55" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 32]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="33" end="33" startBytecode="76" endBytecode="76" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 33]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="34" end="34" startBytecode="108" endBytecode="108" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 34]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="38" end="38" startBytecode="116" endBytecode="116" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 38]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="39" end="39" startBytecode="124" endBytecode="124" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 39]</Message>
+    </SourceLine>
+    <String value="{Statement x 1}" role="STRING_REMAINING_OBLIGATIONS">
+      <Message>Remaining obligations: {Statement x 1}</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" instanceHash="90a63ead3d4f71101d6207c24c23c801" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to clean up stream or resource</ShortMessage>
+    <LongMessage>com.parkit.parkingsystem.dao.TicketDAO.updateTicket(Ticket) may fail to clean up java.sql.Statement</LongMessage>
+    <Class classname="com.parkit.parkingsystem.dao.TicketDAO" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java">
+        <Message>In TicketDAO.java</Message>
+      </SourceLine>
+      <Message>In class com.parkit.parkingsystem.dao.TicketDAO</Message>
+    </Class>
+    <Method classname="com.parkit.parkingsystem.dao.TicketDAO" name="updateTicket" signature="(Lcom/parkit/parkingsystem/model/Ticket;)Z" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="73" end="87" startBytecode="0" endBytecode="330" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java"/>
+      <Message>In method com.parkit.parkingsystem.dao.TicketDAO.updateTicket(Ticket)</Message>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java">
+        <Message>In Statement.java</Message>
+      </SourceLine>
+      <Message>Reference type java.sql.Statement</Message>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING">
+      <Message>1 instances of obligation remaining</Message>
+    </Int>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" primary="true" start="76" end="76" startBytecode="13" endBytecode="13" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at TicketDAO.java:[line 76] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="77" end="77" startBytecode="19" endBytecode="19" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 77]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="78" end="78" startBytecode="30" endBytecode="30" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 78]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="79" end="79" startBytecode="51" endBytecode="51" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 79]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="80" end="80" startBytecode="62" endBytecode="62" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 80]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="81" end="81" startBytecode="69" endBytecode="69" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 81]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="85" end="85" startBytecode="72" endBytecode="72" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 85]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="81" end="81" startBytecode="80" endBytecode="80" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 81]</Message>
+    </SourceLine>
+    <String value="{Statement x 1}" role="STRING_REMAINING_OBLIGATIONS">
+      <Message>Remaining obligations: {Statement x 1}</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" instanceHash="145dbbfca6ff2ad0858963c3a2811607" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to clean up stream or resource on checked exception</ShortMessage>
+    <LongMessage>com.parkit.parkingsystem.dao.TicketDAO.checkIfReccurent(Ticket) may fail to clean up java.sql.ResultSet on checked exception</LongMessage>
+    <Class classname="com.parkit.parkingsystem.dao.TicketDAO" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java">
+        <Message>In TicketDAO.java</Message>
+      </SourceLine>
+      <Message>In class com.parkit.parkingsystem.dao.TicketDAO</Message>
+    </Class>
+    <Method classname="com.parkit.parkingsystem.dao.TicketDAO" name="checkIfReccurent" signature="(Lcom/parkit/parkingsystem/model/Ticket;)Z" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="91" end="108" startBytecode="0" endBytecode="385" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java"/>
+      <Message>In method com.parkit.parkingsystem.dao.TicketDAO.checkIfReccurent(Ticket)</Message>
+    </Method>
+    <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.ResultSet" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java">
+        <Message>In ResultSet.java</Message>
+      </SourceLine>
+      <Message>Reference type java.sql.ResultSet</Message>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING">
+      <Message>1 instances of obligation remaining</Message>
+    </Int>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" primary="true" start="97" end="97" startBytecode="36" endBytecode="36" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at TicketDAO.java:[line 97] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="98" end="98" startBytecode="43" endBytecode="43" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 98]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="103" end="103" startBytecode="84" endBytecode="84" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 103]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="104" end="104" startBytecode="86" endBytecode="86" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 104]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="106" end="106" startBytecode="98" endBytecode="98" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 106]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="107" end="107" startBytecode="106" endBytecode="106" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 107]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="108" end="108" startBytecode="122" endBytecode="122" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 108]</Message>
+    </SourceLine>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS">
+      <Message>Remaining obligations: {Statement x 1,ResultSet x 1}</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" instanceHash="5a2342c6d2513064b1f58f9c3e7a048e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to clean up stream or resource on checked exception</ShortMessage>
+    <LongMessage>com.parkit.parkingsystem.dao.TicketDAO.checkIfReccurent(Ticket) may fail to clean up java.sql.Statement on checked exception</LongMessage>
+    <Class classname="com.parkit.parkingsystem.dao.TicketDAO" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java">
+        <Message>In TicketDAO.java</Message>
+      </SourceLine>
+      <Message>In class com.parkit.parkingsystem.dao.TicketDAO</Message>
+    </Class>
+    <Method classname="com.parkit.parkingsystem.dao.TicketDAO" name="checkIfReccurent" signature="(Lcom/parkit/parkingsystem/model/Ticket;)Z" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="91" end="108" startBytecode="0" endBytecode="385" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java"/>
+      <Message>In method com.parkit.parkingsystem.dao.TicketDAO.checkIfReccurent(Ticket)</Message>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java">
+        <Message>In Statement.java</Message>
+      </SourceLine>
+      <Message>Reference type java.sql.Statement</Message>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING">
+      <Message>1 instances of obligation remaining</Message>
+    </Int>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" primary="true" start="95" end="95" startBytecode="15" endBytecode="15" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at TicketDAO.java:[line 95] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="96" end="96" startBytecode="22" endBytecode="22" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 96]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="97" end="97" startBytecode="34" endBytecode="34" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 97]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="98" end="98" startBytecode="43" endBytecode="43" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 98]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="103" end="103" startBytecode="84" endBytecode="84" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 103]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="104" end="104" startBytecode="86" endBytecode="86" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 104]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="106" end="106" startBytecode="98" endBytecode="98" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 106]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="107" end="107" startBytecode="106" endBytecode="106" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 107]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="108" end="108" startBytecode="122" endBytecode="122" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 108]</Message>
+    </SourceLine>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS">
+      <Message>Remaining obligations: {Statement x 1,ResultSet x 1}</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" instanceHash="4a47d94351507dbaaea8650b77dada36" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to clean up stream or resource on checked exception</ShortMessage>
+    <LongMessage>com.parkit.parkingsystem.dao.TicketDAO.getTicket(String) may fail to clean up java.sql.ResultSet on checked exception</LongMessage>
+    <Class classname="com.parkit.parkingsystem.dao.TicketDAO" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java">
+        <Message>In TicketDAO.java</Message>
+      </SourceLine>
+      <Message>In class com.parkit.parkingsystem.dao.TicketDAO</Message>
+    </Class>
+    <Method classname="com.parkit.parkingsystem.dao.TicketDAO" name="getTicket" signature="(Ljava/lang/String;)Lcom/parkit/parkingsystem/model/Ticket;" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="44" end="68" startBytecode="0" endBytecode="509" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java"/>
+      <Message>In method com.parkit.parkingsystem.dao.TicketDAO.getTicket(String)</Message>
+    </Method>
+    <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.ResultSet" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java">
+        <Message>In ResultSet.java</Message>
+      </SourceLine>
+      <Message>Reference type java.sql.ResultSet</Message>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING">
+      <Message>1 instances of obligation remaining</Message>
+    </Int>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" primary="true" start="51" end="51" startBytecode="33" endBytecode="33" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at TicketDAO.java:[line 51] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="52" end="52" startBytecode="40" endBytecode="40" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 52]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="64" end="64" startBytecode="175" endBytecode="175" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 64]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="65" end="65" startBytecode="177" endBytecode="177" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 65]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="67" end="67" startBytecode="199" endBytecode="199" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 67]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="68" end="68" startBytecode="209" endBytecode="209" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 68]</Message>
+    </SourceLine>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS">
+      <Message>Remaining obligations: {Statement x 1,ResultSet x 1}</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" instanceHash="af381ca2712cc071a2ee76daabab2600" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to clean up stream or resource on checked exception</ShortMessage>
+    <LongMessage>com.parkit.parkingsystem.dao.TicketDAO.getTicket(String) may fail to clean up java.sql.Statement on checked exception</LongMessage>
+    <Class classname="com.parkit.parkingsystem.dao.TicketDAO" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java">
+        <Message>In TicketDAO.java</Message>
+      </SourceLine>
+      <Message>In class com.parkit.parkingsystem.dao.TicketDAO</Message>
+    </Class>
+    <Method classname="com.parkit.parkingsystem.dao.TicketDAO" name="getTicket" signature="(Ljava/lang/String;)Lcom/parkit/parkingsystem/model/Ticket;" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="44" end="68" startBytecode="0" endBytecode="509" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java"/>
+      <Message>In method com.parkit.parkingsystem.dao.TicketDAO.getTicket(String)</Message>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java">
+        <Message>In Statement.java</Message>
+      </SourceLine>
+      <Message>Reference type java.sql.Statement</Message>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING">
+      <Message>1 instances of obligation remaining</Message>
+    </Int>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" primary="true" start="48" end="48" startBytecode="15" endBytecode="15" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at TicketDAO.java:[line 48] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="50" end="50" startBytecode="22" endBytecode="22" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 50]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="51" end="51" startBytecode="31" endBytecode="31" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 51]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="52" end="52" startBytecode="40" endBytecode="40" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 52]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="64" end="64" startBytecode="175" endBytecode="175" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 64]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="65" end="65" startBytecode="177" endBytecode="177" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 65]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="67" end="67" startBytecode="199" endBytecode="199" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 67]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="68" end="68" startBytecode="209" endBytecode="209" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at TicketDAO.java:[line 68]</Message>
+    </SourceLine>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS">
+      <Message>Remaining obligations: {Statement x 1,ResultSet x 1}</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" instanceHash="6abbc23ccc8f76a4cb92af535af225a5" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La méthode peut ne pas fermer une ressource base de données</ShortMessage>
+    <LongMessage>La méthode com.parkit.parkingsystem.dao.TicketDAO.saveTicket(Ticket) peut ne pas fermer une ressource base de données</LongMessage>
+    <Class classname="com.parkit.parkingsystem.dao.TicketDAO" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java">
+        <Message>In TicketDAO.java</Message>
+      </SourceLine>
+      <Message>In class com.parkit.parkingsystem.dao.TicketDAO</Message>
+    </Class>
+    <Method classname="com.parkit.parkingsystem.dao.TicketDAO" name="saveTicket" signature="(Lcom/parkit/parkingsystem/model/Ticket;)Z" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="23" end="39" startBytecode="0" endBytecode="75" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java"/>
+      <Message>In method com.parkit.parkingsystem.dao.TicketDAO.saveTicket(Ticket)</Message>
+    </Method>
+    <Type descriptor="Ljava/sql/PreparedStatement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.PreparedStatement" start="1266" end="1319" sourcefile="PreparedStatement.java" sourcepath="java/sql/PreparedStatement.java">
+        <Message>At PreparedStatement.java:[lines 1266-1319]</Message>
+      </SourceLine>
+      <Message>Need to close java.sql.PreparedStatement </Message>
+    </Type>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" primary="true" start="26" end="26" startBytecode="13" endBytecode="13" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java">
+      <Message>At TicketDAO.java:[line 26]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" primary="true" start="26" end="26" startBytecode="13" endBytecode="13" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java">
+      <Message>At TicketDAO.java:[line 26]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" instanceHash="7114833f2ea15321d20780585414094c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La méthode peut ne pas fermer une ressource base de données</ShortMessage>
+    <LongMessage>La méthode com.parkit.parkingsystem.dao.TicketDAO.updateTicket(Ticket) peut ne pas fermer une ressource base de données</LongMessage>
+    <Class classname="com.parkit.parkingsystem.dao.TicketDAO" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java">
+        <Message>In TicketDAO.java</Message>
+      </SourceLine>
+      <Message>In class com.parkit.parkingsystem.dao.TicketDAO</Message>
+    </Class>
+    <Method classname="com.parkit.parkingsystem.dao.TicketDAO" name="updateTicket" signature="(Lcom/parkit/parkingsystem/model/Ticket;)Z" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" start="73" end="87" startBytecode="0" endBytecode="58" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java"/>
+      <Message>In method com.parkit.parkingsystem.dao.TicketDAO.updateTicket(Ticket)</Message>
+    </Method>
+    <Type descriptor="Ljava/sql/PreparedStatement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.PreparedStatement" start="1266" end="1319" sourcefile="PreparedStatement.java" sourcepath="java/sql/PreparedStatement.java">
+        <Message>At PreparedStatement.java:[lines 1266-1319]</Message>
+      </SourceLine>
+      <Message>Need to close java.sql.PreparedStatement </Message>
+    </Type>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" primary="true" start="76" end="76" startBytecode="13" endBytecode="13" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java">
+      <Message>At TicketDAO.java:[line 76]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.dao.TicketDAO" primary="true" start="76" end="76" startBytecode="13" endBytecode="13" sourcefile="TicketDAO.java" sourcepath="com/parkit/parkingsystem/dao/TicketDAO.java" relSourcepath="main\java\com\parkit\parkingsystem\dao\TicketDAO.java">
+      <Message>At TicketDAO.java:[line 76]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" instanceHash="1aa59fae73cf9268db4890dbb0a7e1fc" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ jamais écrit</ShortMessage>
+    <LongMessage>Champ jamais écrit : com.parkit.parkingsystem.integration.ParkingDataBaseIT.parkingSpot</LongMessage>
+    <Class classname="com.parkit.parkingsystem.integration.ParkingDataBaseIT" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.integration.ParkingDataBaseIT" sourcefile="ParkingDataBaseIT.java" sourcepath="com/parkit/parkingsystem/integration/ParkingDataBaseIT.java" relSourcepath="test\java\com\parkit\parkingsystem\integration\ParkingDataBaseIT.java">
+        <Message>In ParkingDataBaseIT.java</Message>
+      </SourceLine>
+      <Message>In class com.parkit.parkingsystem.integration.ParkingDataBaseIT</Message>
+    </Class>
+    <Field classname="com.parkit.parkingsystem.integration.ParkingDataBaseIT" name="parkingSpot" signature="Lcom/parkit/parkingsystem/model/ParkingSpot;" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.integration.ParkingDataBaseIT" sourcefile="ParkingDataBaseIT.java" sourcepath="com/parkit/parkingsystem/integration/ParkingDataBaseIT.java" relSourcepath="test\java\com\parkit\parkingsystem\integration\ParkingDataBaseIT.java">
+        <Message>In ParkingDataBaseIT.java</Message>
+      </SourceLine>
+      <Message>Field com.parkit.parkingsystem.integration.ParkingDataBaseIT.parkingSpot</Message>
+    </Field>
+    <SourceLine classname="com.parkit.parkingsystem.integration.ParkingDataBaseIT" primary="true" start="67" end="67" startBytecode="55" endBytecode="55" sourcefile="ParkingDataBaseIT.java" sourcepath="com/parkit/parkingsystem/integration/ParkingDataBaseIT.java" relSourcepath="test\java\com\parkit\parkingsystem\integration\ParkingDataBaseIT.java">
+      <Message>At ParkingDataBaseIT.java:[line 67]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DMI_CONSTANT_DB_PASSWORD" priority="2" rank="7" abbrev="Dm" category="SECURITY" instanceHash="885823d15ab0b6f996efe6ad8f75a9c3" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="259">
+    <ShortMessage>Hardcoded constant database password</ShortMessage>
+    <LongMessage>Hardcoded constant database password in com.parkit.parkingsystem.integration.config.DataBaseTestConfig.getConnection()</LongMessage>
+    <Class classname="com.parkit.parkingsystem.integration.config.DataBaseTestConfig" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.integration.config.DataBaseTestConfig" sourcefile="DataBaseTestConfig.java" sourcepath="com/parkit/parkingsystem/integration/config/DataBaseTestConfig.java" relSourcepath="test\java\com\parkit\parkingsystem\integration\config\DataBaseTestConfig.java">
+        <Message>In DataBaseTestConfig.java</Message>
+      </SourceLine>
+      <Message>In class com.parkit.parkingsystem.integration.config.DataBaseTestConfig</Message>
+    </Class>
+    <Method classname="com.parkit.parkingsystem.integration.config.DataBaseTestConfig" name="getConnection" signature="()Ljava/sql/Connection;" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.integration.config.DataBaseTestConfig" start="14" end="16" startBytecode="0" endBytecode="10" sourcefile="DataBaseTestConfig.java" sourcepath="com/parkit/parkingsystem/integration/config/DataBaseTestConfig.java" relSourcepath="test\java\com\parkit\parkingsystem\integration\config\DataBaseTestConfig.java"/>
+      <Message>In method com.parkit.parkingsystem.integration.config.DataBaseTestConfig.getConnection()</Message>
+    </Method>
+    <SourceLine classname="com.parkit.parkingsystem.integration.config.DataBaseTestConfig" primary="true" start="16" end="16" startBytecode="22" endBytecode="22" sourcefile="DataBaseTestConfig.java" sourcepath="com/parkit/parkingsystem/integration/config/DataBaseTestConfig.java" relSourcepath="test\java\com\parkit\parkingsystem\integration\config\DataBaseTestConfig.java">
+      <Message>At DataBaseTestConfig.java:[line 16]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.integration.config.DataBaseTestConfig" primary="true" start="16" end="16" startBytecode="22" endBytecode="22" sourcefile="DataBaseTestConfig.java" sourcepath="com/parkit/parkingsystem/integration/config/DataBaseTestConfig.java" relSourcepath="test\java\com\parkit\parkingsystem\integration\config\DataBaseTestConfig.java">
+      <Message>At DataBaseTestConfig.java:[line 16]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" instanceHash="bc1d0f1ac34001f0f894229c1a54c44a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to clean up stream or resource</ShortMessage>
+    <LongMessage>com.parkit.parkingsystem.integration.service.DataBasePrepareService.clearDataBaseEntries() may fail to clean up java.sql.Statement</LongMessage>
+    <Class classname="com.parkit.parkingsystem.integration.service.DataBasePrepareService" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.integration.service.DataBasePrepareService" sourcefile="DataBasePrepareService.java" sourcepath="com/parkit/parkingsystem/integration/service/DataBasePrepareService.java" relSourcepath="test\java\com\parkit\parkingsystem\integration\service\DataBasePrepareService.java">
+        <Message>In DataBasePrepareService.java</Message>
+      </SourceLine>
+      <Message>In class com.parkit.parkingsystem.integration.service.DataBasePrepareService</Message>
+    </Class>
+    <Method classname="com.parkit.parkingsystem.integration.service.DataBasePrepareService" name="clearDataBaseEntries" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.integration.service.DataBasePrepareService" start="12" end="27" startBytecode="0" endBytecode="239" sourcefile="DataBasePrepareService.java" sourcepath="com/parkit/parkingsystem/integration/service/DataBasePrepareService.java" relSourcepath="test\java\com\parkit\parkingsystem\integration\service\DataBasePrepareService.java"/>
+      <Message>In method com.parkit.parkingsystem.integration.service.DataBasePrepareService.clearDataBaseEntries()</Message>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java">
+        <Message>In Statement.java</Message>
+      </SourceLine>
+      <Message>Reference type java.sql.Statement</Message>
+    </Class>
+    <Int value="2" role="INT_OBLIGATIONS_REMAINING">
+      <Message>2 instances of obligation remaining</Message>
+    </Int>
+    <SourceLine classname="com.parkit.parkingsystem.integration.service.DataBasePrepareService" primary="true" start="17" end="17" startBytecode="13" endBytecode="13" sourcefile="DataBasePrepareService.java" sourcepath="com/parkit/parkingsystem/integration/service/DataBasePrepareService.java" relSourcepath="test\java\com\parkit\parkingsystem\integration\service\DataBasePrepareService.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at DataBasePrepareService.java:[line 17] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.integration.service.DataBasePrepareService" start="20" end="20" startBytecode="24" endBytecode="24" sourcefile="DataBasePrepareService.java" sourcepath="com/parkit/parkingsystem/integration/service/DataBasePrepareService.java" relSourcepath="test\java\com\parkit\parkingsystem\integration\service\DataBasePrepareService.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at DataBasePrepareService.java:[line 20]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.integration.service.DataBasePrepareService" start="20" end="20" startBytecode="27" endBytecode="27" sourcefile="DataBasePrepareService.java" sourcepath="com/parkit/parkingsystem/integration/service/DataBasePrepareService.java" relSourcepath="test\java\com\parkit\parkingsystem\integration\service\DataBasePrepareService.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at DataBasePrepareService.java:[line 20] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.integration.service.DataBasePrepareService" start="25" end="25" startBytecode="38" endBytecode="38" sourcefile="DataBasePrepareService.java" sourcepath="com/parkit/parkingsystem/integration/service/DataBasePrepareService.java" relSourcepath="test\java\com\parkit\parkingsystem\integration\service\DataBasePrepareService.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at DataBasePrepareService.java:[line 25]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.integration.service.DataBasePrepareService" start="26" end="26" startBytecode="46" endBytecode="46" sourcefile="DataBasePrepareService.java" sourcepath="com/parkit/parkingsystem/integration/service/DataBasePrepareService.java" relSourcepath="test\java\com\parkit\parkingsystem\integration\service\DataBasePrepareService.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at DataBasePrepareService.java:[line 26]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.integration.service.DataBasePrepareService" start="27" end="27" startBytecode="76" endBytecode="76" sourcefile="DataBasePrepareService.java" sourcepath="com/parkit/parkingsystem/integration/service/DataBasePrepareService.java" relSourcepath="test\java\com\parkit\parkingsystem\integration\service\DataBasePrepareService.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at DataBasePrepareService.java:[line 27]</Message>
+    </SourceLine>
+    <String value="{Statement x 2}" role="STRING_REMAINING_OBLIGATIONS">
+      <Message>Remaining obligations: {Statement x 2}</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" instanceHash="c25a452b0cd6c8f9c6167beea6014ede" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La méthode peut ne pas fermer une ressource base de données</ShortMessage>
+    <LongMessage>La méthode com.parkit.parkingsystem.integration.service.DataBasePrepareService.clearDataBaseEntries() peut ne pas fermer une ressource base de données</LongMessage>
+    <Class classname="com.parkit.parkingsystem.integration.service.DataBasePrepareService" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.integration.service.DataBasePrepareService" sourcefile="DataBasePrepareService.java" sourcepath="com/parkit/parkingsystem/integration/service/DataBasePrepareService.java" relSourcepath="test\java\com\parkit\parkingsystem\integration\service\DataBasePrepareService.java">
+        <Message>In DataBasePrepareService.java</Message>
+      </SourceLine>
+      <Message>In class com.parkit.parkingsystem.integration.service.DataBasePrepareService</Message>
+    </Class>
+    <Method classname="com.parkit.parkingsystem.integration.service.DataBasePrepareService" name="clearDataBaseEntries" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.integration.service.DataBasePrepareService" start="12" end="27" startBytecode="0" endBytecode="36" sourcefile="DataBasePrepareService.java" sourcepath="com/parkit/parkingsystem/integration/service/DataBasePrepareService.java" relSourcepath="test\java\com\parkit\parkingsystem\integration\service\DataBasePrepareService.java"/>
+      <Message>In method com.parkit.parkingsystem.integration.service.DataBasePrepareService.clearDataBaseEntries()</Message>
+    </Method>
+    <Type descriptor="Ljava/sql/PreparedStatement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.PreparedStatement" start="1266" end="1319" sourcefile="PreparedStatement.java" sourcepath="java/sql/PreparedStatement.java">
+        <Message>At PreparedStatement.java:[lines 1266-1319]</Message>
+      </SourceLine>
+      <Message>Need to close java.sql.PreparedStatement </Message>
+    </Type>
+    <SourceLine classname="com.parkit.parkingsystem.integration.service.DataBasePrepareService" primary="true" start="17" end="17" startBytecode="13" endBytecode="13" sourcefile="DataBasePrepareService.java" sourcepath="com/parkit/parkingsystem/integration/service/DataBasePrepareService.java" relSourcepath="test\java\com\parkit\parkingsystem\integration\service\DataBasePrepareService.java">
+      <Message>At DataBasePrepareService.java:[line 17]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.integration.service.DataBasePrepareService" primary="true" start="17" end="17" startBytecode="13" endBytecode="13" sourcefile="DataBasePrepareService.java" sourcepath="com/parkit/parkingsystem/integration/service/DataBasePrepareService.java" relSourcepath="test\java\com\parkit\parkingsystem\integration\service\DataBasePrepareService.java">
+      <Message>At DataBasePrepareService.java:[line 17]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="5ff54b68f4b8003ddecbd7d44bdc241d" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>Une méthode peut exposer sa représentation interne en renvoyant une référence à un objet modifiable</ShortMessage>
+    <LongMessage>La méthode com.parkit.parkingsystem.model.Ticket.getInTime() risque d&apos;exposer sa représentation interne en renvoyant com.parkit.parkingsystem.model.Ticket.inTime</LongMessage>
+    <Class classname="com.parkit.parkingsystem.model.Ticket" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.model.Ticket" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java">
+        <Message>In Ticket.java</Message>
+      </SourceLine>
+      <Message>In class com.parkit.parkingsystem.model.Ticket</Message>
+    </Class>
+    <Method classname="com.parkit.parkingsystem.model.Ticket" name="getInTime" signature="()Ljava/util/Date;" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.model.Ticket" start="47" end="47" startBytecode="0" endBytecode="46" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java"/>
+      <Message>In method com.parkit.parkingsystem.model.Ticket.getInTime()</Message>
+    </Method>
+    <Field classname="com.parkit.parkingsystem.model.Ticket" name="inTime" signature="Ljava/util/Date;" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.model.Ticket" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java">
+        <Message>In Ticket.java</Message>
+      </SourceLine>
+      <Message>Field com.parkit.parkingsystem.model.Ticket.inTime</Message>
+    </Field>
+    <SourceLine classname="com.parkit.parkingsystem.model.Ticket" primary="true" start="47" end="47" startBytecode="4" endBytecode="4" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java">
+      <Message>At Ticket.java:[line 47]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.model.Ticket" primary="true" start="47" end="47" startBytecode="4" endBytecode="4" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java">
+      <Message>At Ticket.java:[line 47]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="f2fc408ffb417b215f42fd76bc6bff20" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>Une méthode peut exposer sa représentation interne en renvoyant une référence à un objet modifiable</ShortMessage>
+    <LongMessage>La méthode com.parkit.parkingsystem.model.Ticket.getOutTime() risque d&apos;exposer sa représentation interne en renvoyant com.parkit.parkingsystem.model.Ticket.outTime</LongMessage>
+    <Class classname="com.parkit.parkingsystem.model.Ticket" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.model.Ticket" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java">
+        <Message>In Ticket.java</Message>
+      </SourceLine>
+      <Message>In class com.parkit.parkingsystem.model.Ticket</Message>
+    </Class>
+    <Method classname="com.parkit.parkingsystem.model.Ticket" name="getOutTime" signature="()Ljava/util/Date;" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.model.Ticket" start="55" end="55" startBytecode="0" endBytecode="46" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java"/>
+      <Message>In method com.parkit.parkingsystem.model.Ticket.getOutTime()</Message>
+    </Method>
+    <Field classname="com.parkit.parkingsystem.model.Ticket" name="outTime" signature="Ljava/util/Date;" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.model.Ticket" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java">
+        <Message>In Ticket.java</Message>
+      </SourceLine>
+      <Message>Field com.parkit.parkingsystem.model.Ticket.outTime</Message>
+    </Field>
+    <SourceLine classname="com.parkit.parkingsystem.model.Ticket" primary="true" start="55" end="55" startBytecode="4" endBytecode="4" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java">
+      <Message>At Ticket.java:[line 55]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.model.Ticket" primary="true" start="55" end="55" startBytecode="4" endBytecode="4" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java">
+      <Message>At Ticket.java:[line 55]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="8b638e869de2a132a4b4821f23613913" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>Une méthode peut exposer sa représentation interne en renvoyant une référence à un objet modifiable</ShortMessage>
+    <LongMessage>La méthode com.parkit.parkingsystem.model.Ticket.getParkingSpot() risque d&apos;exposer sa représentation interne en renvoyant com.parkit.parkingsystem.model.Ticket.parkingSpot</LongMessage>
+    <Class classname="com.parkit.parkingsystem.model.Ticket" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.model.Ticket" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java">
+        <Message>In Ticket.java</Message>
+      </SourceLine>
+      <Message>In class com.parkit.parkingsystem.model.Ticket</Message>
+    </Class>
+    <Method classname="com.parkit.parkingsystem.model.Ticket" name="getParkingSpot" signature="()Lcom/parkit/parkingsystem/model/ParkingSpot;" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.model.Ticket" start="23" end="23" startBytecode="0" endBytecode="46" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java"/>
+      <Message>In method com.parkit.parkingsystem.model.Ticket.getParkingSpot()</Message>
+    </Method>
+    <Field classname="com.parkit.parkingsystem.model.Ticket" name="parkingSpot" signature="Lcom/parkit/parkingsystem/model/ParkingSpot;" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.model.Ticket" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java">
+        <Message>In Ticket.java</Message>
+      </SourceLine>
+      <Message>Field com.parkit.parkingsystem.model.Ticket.parkingSpot</Message>
+    </Field>
+    <SourceLine classname="com.parkit.parkingsystem.model.Ticket" primary="true" start="23" end="23" startBytecode="4" endBytecode="4" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java">
+      <Message>At Ticket.java:[line 23]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.model.Ticket" primary="true" start="23" end="23" startBytecode="4" endBytecode="4" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java">
+      <Message>At Ticket.java:[line 23]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="4aa649554044801fc226c4af21586e57" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>Une méthode expose sa représentation interne en incorporant une référence à un objet modifiable</ShortMessage>
+    <LongMessage>La méthode com.parkit.parkingsystem.model.Ticket.setInTime(Date) risque d&apos;exposer sa représentation interne en stockant un objet externe modifiable dans com.parkit.parkingsystem.model.Ticket.inTime</LongMessage>
+    <Class classname="com.parkit.parkingsystem.model.Ticket" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.model.Ticket" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java">
+        <Message>In Ticket.java</Message>
+      </SourceLine>
+      <Message>In class com.parkit.parkingsystem.model.Ticket</Message>
+    </Class>
+    <Method classname="com.parkit.parkingsystem.model.Ticket" name="setInTime" signature="(Ljava/util/Date;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.model.Ticket" start="51" end="52" startBytecode="0" endBytecode="61" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java"/>
+      <Message>In method com.parkit.parkingsystem.model.Ticket.setInTime(Date)</Message>
+    </Method>
+    <Field classname="com.parkit.parkingsystem.model.Ticket" name="inTime" signature="Ljava/util/Date;" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.model.Ticket" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java">
+        <Message>In Ticket.java</Message>
+      </SourceLine>
+      <Message>Field com.parkit.parkingsystem.model.Ticket.inTime</Message>
+    </Field>
+    <LocalVariable name="inTime" register="1" pc="2" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named inTime</Message>
+    </LocalVariable>
+    <SourceLine classname="com.parkit.parkingsystem.model.Ticket" primary="true" start="51" end="51" startBytecode="2" endBytecode="2" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java">
+      <Message>At Ticket.java:[line 51]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.model.Ticket" primary="true" start="51" end="51" startBytecode="2" endBytecode="2" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java">
+      <Message>At Ticket.java:[line 51]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="840007377b234825c3b504443582274a" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>Une méthode expose sa représentation interne en incorporant une référence à un objet modifiable</ShortMessage>
+    <LongMessage>La méthode com.parkit.parkingsystem.model.Ticket.setOutTime(Date) risque d&apos;exposer sa représentation interne en stockant un objet externe modifiable dans com.parkit.parkingsystem.model.Ticket.outTime</LongMessage>
+    <Class classname="com.parkit.parkingsystem.model.Ticket" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.model.Ticket" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java">
+        <Message>In Ticket.java</Message>
+      </SourceLine>
+      <Message>In class com.parkit.parkingsystem.model.Ticket</Message>
+    </Class>
+    <Method classname="com.parkit.parkingsystem.model.Ticket" name="setOutTime" signature="(Ljava/util/Date;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.model.Ticket" start="59" end="60" startBytecode="0" endBytecode="61" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java"/>
+      <Message>In method com.parkit.parkingsystem.model.Ticket.setOutTime(Date)</Message>
+    </Method>
+    <Field classname="com.parkit.parkingsystem.model.Ticket" name="outTime" signature="Ljava/util/Date;" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.model.Ticket" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java">
+        <Message>In Ticket.java</Message>
+      </SourceLine>
+      <Message>Field com.parkit.parkingsystem.model.Ticket.outTime</Message>
+    </Field>
+    <LocalVariable name="outTime" register="1" pc="2" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named outTime</Message>
+    </LocalVariable>
+    <SourceLine classname="com.parkit.parkingsystem.model.Ticket" primary="true" start="59" end="59" startBytecode="2" endBytecode="2" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java">
+      <Message>At Ticket.java:[line 59]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.model.Ticket" primary="true" start="59" end="59" startBytecode="2" endBytecode="2" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java">
+      <Message>At Ticket.java:[line 59]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="40e5ec44daab369397df787a869433bd" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>Une méthode expose sa représentation interne en incorporant une référence à un objet modifiable</ShortMessage>
+    <LongMessage>La méthode com.parkit.parkingsystem.model.Ticket.setParkingSpot(ParkingSpot) risque d&apos;exposer sa représentation interne en stockant un objet externe modifiable dans com.parkit.parkingsystem.model.Ticket.parkingSpot</LongMessage>
+    <Class classname="com.parkit.parkingsystem.model.Ticket" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.model.Ticket" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java">
+        <Message>In Ticket.java</Message>
+      </SourceLine>
+      <Message>In class com.parkit.parkingsystem.model.Ticket</Message>
+    </Class>
+    <Method classname="com.parkit.parkingsystem.model.Ticket" name="setParkingSpot" signature="(Lcom/parkit/parkingsystem/model/ParkingSpot;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.model.Ticket" start="27" end="28" startBytecode="0" endBytecode="61" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java"/>
+      <Message>In method com.parkit.parkingsystem.model.Ticket.setParkingSpot(ParkingSpot)</Message>
+    </Method>
+    <Field classname="com.parkit.parkingsystem.model.Ticket" name="parkingSpot" signature="Lcom/parkit/parkingsystem/model/ParkingSpot;" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.model.Ticket" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java">
+        <Message>In Ticket.java</Message>
+      </SourceLine>
+      <Message>Field com.parkit.parkingsystem.model.Ticket.parkingSpot</Message>
+    </Field>
+    <LocalVariable name="parkingSpot" register="1" pc="2" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named parkingSpot</Message>
+    </LocalVariable>
+    <SourceLine classname="com.parkit.parkingsystem.model.Ticket" primary="true" start="27" end="27" startBytecode="2" endBytecode="2" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java">
+      <Message>At Ticket.java:[line 27]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.model.Ticket" primary="true" start="27" end="27" startBytecode="2" endBytecode="2" sourcefile="Ticket.java" sourcepath="com/parkit/parkingsystem/model/Ticket.java" relSourcepath="main\java\com\parkit\parkingsystem\model\Ticket.java">
+      <Message>At Ticket.java:[line 27]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="a3c60d0cfb964927cce4edab3731d7da" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.parkit.parkingsystem.service.FareCalculatorService.calculateFare(Ticket)</LongMessage>
+    <Class classname="com.parkit.parkingsystem.service.FareCalculatorService" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.service.FareCalculatorService" sourcefile="FareCalculatorService.java" sourcepath="com/parkit/parkingsystem/service/FareCalculatorService.java" relSourcepath="main\java\com\parkit\parkingsystem\service\FareCalculatorService.java">
+        <Message>In FareCalculatorService.java</Message>
+      </SourceLine>
+      <Message>In class com.parkit.parkingsystem.service.FareCalculatorService</Message>
+    </Class>
+    <Method classname="com.parkit.parkingsystem.service.FareCalculatorService" name="calculateFare" signature="(Lcom/parkit/parkingsystem/model/Ticket;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.service.FareCalculatorService" start="11" end="32" startBytecode="0" endBytecode="81" sourcefile="FareCalculatorService.java" sourcepath="com/parkit/parkingsystem/service/FareCalculatorService.java" relSourcepath="main\java\com\parkit\parkingsystem\service\FareCalculatorService.java"/>
+      <Message>In method com.parkit.parkingsystem.service.FareCalculatorService.calculateFare(Ticket)</Message>
+    </Method>
+    <LocalVariable name="inHour" register="2" pc="62" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named inHour</Message>
+    </LocalVariable>
+    <SourceLine classname="com.parkit.parkingsystem.service.FareCalculatorService" primary="true" start="15" end="15" startBytecode="61" endBytecode="61" sourcefile="FareCalculatorService.java" sourcepath="com/parkit/parkingsystem/service/FareCalculatorService.java" relSourcepath="main\java\com\parkit\parkingsystem\service\FareCalculatorService.java">
+      <Message>At FareCalculatorService.java:[line 15]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.service.FareCalculatorService" primary="true" start="15" end="15" startBytecode="61" endBytecode="61" sourcefile="FareCalculatorService.java" sourcepath="com/parkit/parkingsystem/service/FareCalculatorService.java" relSourcepath="main\java\com\parkit\parkingsystem\service\FareCalculatorService.java">
+      <Message>At FareCalculatorService.java:[line 15]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="inHour"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="77b69ab334291c6add8133eb5efb3dcd" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.parkit.parkingsystem.service.FareCalculatorService.calculateFare(Ticket)</LongMessage>
+    <Class classname="com.parkit.parkingsystem.service.FareCalculatorService" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.service.FareCalculatorService" sourcefile="FareCalculatorService.java" sourcepath="com/parkit/parkingsystem/service/FareCalculatorService.java" relSourcepath="main\java\com\parkit\parkingsystem\service\FareCalculatorService.java">
+        <Message>In FareCalculatorService.java</Message>
+      </SourceLine>
+      <Message>In class com.parkit.parkingsystem.service.FareCalculatorService</Message>
+    </Class>
+    <Method classname="com.parkit.parkingsystem.service.FareCalculatorService" name="calculateFare" signature="(Lcom/parkit/parkingsystem/model/Ticket;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.service.FareCalculatorService" start="11" end="32" startBytecode="0" endBytecode="81" sourcefile="FareCalculatorService.java" sourcepath="com/parkit/parkingsystem/service/FareCalculatorService.java" relSourcepath="main\java\com\parkit\parkingsystem\service\FareCalculatorService.java"/>
+      <Message>In method com.parkit.parkingsystem.service.FareCalculatorService.calculateFare(Ticket)</Message>
+    </Method>
+    <LocalVariable name="outHour" register="3" pc="70" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named outHour</Message>
+    </LocalVariable>
+    <SourceLine classname="com.parkit.parkingsystem.service.FareCalculatorService" primary="true" start="16" end="16" startBytecode="69" endBytecode="69" sourcefile="FareCalculatorService.java" sourcepath="com/parkit/parkingsystem/service/FareCalculatorService.java" relSourcepath="main\java\com\parkit\parkingsystem\service\FareCalculatorService.java">
+      <Message>At FareCalculatorService.java:[line 16]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.service.FareCalculatorService" primary="true" start="16" end="16" startBytecode="69" endBytecode="69" sourcefile="FareCalculatorService.java" sourcepath="com/parkit/parkingsystem/service/FareCalculatorService.java" relSourcepath="main\java\com\parkit\parkingsystem\service\FareCalculatorService.java">
+      <Message>At FareCalculatorService.java:[line 16]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="outHour"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="5b3f3099e647b54acbba221071ecb186" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in com.parkit.parkingsystem.util.InputReaderUtil.&lt;static initializer for InputReaderUtil&gt;(): new java.util.Scanner(InputStream)</LongMessage>
+    <Class classname="com.parkit.parkingsystem.util.InputReaderUtil" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.util.InputReaderUtil" sourcefile="InputReaderUtil.java" sourcepath="com/parkit/parkingsystem/util/InputReaderUtil.java" relSourcepath="main\java\com\parkit\parkingsystem\util\InputReaderUtil.java">
+        <Message>In InputReaderUtil.java</Message>
+      </SourceLine>
+      <Message>In class com.parkit.parkingsystem.util.InputReaderUtil</Message>
+    </Class>
+    <Method classname="com.parkit.parkingsystem.util.InputReaderUtil" name="&lt;clinit&gt;" signature="()V" isStatic="true" primary="true">
+      <SourceLine classname="com.parkit.parkingsystem.util.InputReaderUtil" start="10" end="11" startBytecode="0" endBytecode="49" sourcefile="InputReaderUtil.java" sourcepath="com/parkit/parkingsystem/util/InputReaderUtil.java" relSourcepath="main\java\com\parkit\parkingsystem\util\InputReaderUtil.java"/>
+      <Message>In method com.parkit.parkingsystem.util.InputReaderUtil.&lt;static initializer for InputReaderUtil&gt;()</Message>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner" start="566" end="567" startBytecode="0" endBytecode="71" sourcefile="Scanner.java" sourcepath="java/util/Scanner.java"/>
+      <Message>Called method new java.util.Scanner(InputStream)</Message>
+    </Method>
+    <SourceLine classname="com.parkit.parkingsystem.util.InputReaderUtil" primary="true" start="10" end="10" startBytecode="7" endBytecode="7" sourcefile="InputReaderUtil.java" sourcepath="com/parkit/parkingsystem/util/InputReaderUtil.java" relSourcepath="main\java\com\parkit\parkingsystem\util\InputReaderUtil.java">
+      <Message>At InputReaderUtil.java:[line 10]</Message>
+    </SourceLine>
+    <SourceLine classname="com.parkit.parkingsystem.util.InputReaderUtil" primary="true" start="10" end="10" startBytecode="7" endBytecode="7" sourcefile="InputReaderUtil.java" sourcepath="com/parkit/parkingsystem/util/InputReaderUtil.java" relSourcepath="main\java\com\parkit\parkingsystem\util\InputReaderUtil.java">
+      <Message>At InputReaderUtil.java:[line 10]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="MALICIOUS_CODE">
+    <Description>Malicious code vulnerability</Description>
+  </BugCategory>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugCategory category="SECURITY">
+    <Description>Security</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugCategory category="EXPERIMENTAL">
+    <Description>Experimental</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="EI_EXPOSE_REP2" abbrev="EI2" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>Une méthode expose sa représentation interne en incorporant une référence à un objet modifiable</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce code stocke une référence à un objet externe modifiable dans la représentation interne de l'objet. Si des instances sont accédées par du code non fiable, et que des modifications non vérifiées peuvent compromettre la sécurité ou d'autres propriétés importantes, vous devez faire autre chose. Stocker une copie de l'objet est une meilleur approche dans de nombreuses situations.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="DMI_CONSTANT_DB_PASSWORD" abbrev="Dm" category="SECURITY" cweid="259">
+    <ShortDescription>Hardcoded constant database password</ShortDescription>
+    <Details><![CDATA[
+      
+    <p>This code creates a database connect using a hardcoded, constant password. Anyone with access to either the source code or the compiled code can
+    easily learn the password.
+</p>
+
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="EI_EXPOSE_REP" abbrev="EI" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>Une méthode peut exposer sa représentation interne en renvoyant une référence à un objet modifiable</ShortDescription>
+    <Details><![CDATA[
+
+<p>Renvoyer une référence à un objet modifiable stocké dans les champs d'un objet expose la représentation interne de l'objet. Si des instances sont accédées par du code non fiable, et que des modifications non vérifiées peuvent compromettre la sécurité ou d'autres propriétés importantes, vous devez faire autre chose. Renvoyer une nouvelle copie de l'objet est une meilleur approche dans de nombreuses situations.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="ODR_OPEN_DATABASE_RESOURCE" abbrev="ODR" category="BAD_PRACTICE">
+    <ShortDescription>La méthode peut ne pas fermer une ressource base de données</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette méthode crée une ressource base de données (telle qu'une connexion ou un <code>RowSet</code>), ne l'affecte à aucun champ, ne la passe à aucune autre méthode, ne la renvoie pas, et ne semble pas la fermer dans tous les chemins d'exécution. Ne pas fermer une ressource base de données dans tous les chemins d'exécution peut entraîner de faibles performances et poser des problèmes de communication entre la base de données et l'application.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="UWF_UNWRITTEN_FIELD" abbrev="UwF" category="CORRECTNESS">
+    <ShortDescription>Champ jamais écrit</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais alimenté. Toutes les lectures vont renvoyer sa valeur par défaut. Recherchez les erreurs (devrait-il avoir été initialisé ?) ou supprimez le s'il est inutile.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion, and will assume that the default platform encoding is suitable. This will cause the application behaviour to vary between platforms. Use an alternative API and specify a charset name or Charset object explicitly.  </p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugPattern type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" abbrev="OBL" category="EXPERIMENTAL">
+    <ShortDescription>Method may fail to clean up stream or resource on checked exception</ShortDescription>
+    <Details><![CDATA[
+          
+          <p>
+          This method may fail to clean up (close, dispose of) a stream,
+          database object, or other
+          resource requiring an explicit cleanup operation.
+          </p>
+
+          <p>
+          In general, if a method opens a stream or other resource,
+          the method should use a try/finally block to ensure that
+          the stream or resource is cleaned up before the method
+          returns.
+          </p>
+
+          <p>
+          This bug pattern is essentially the same as the
+          OS_OPEN_STREAM and ODR_OPEN_DATABASE_RESOURCE
+          bug patterns, but is based on a different
+          (and hopefully better) static analysis technique.
+          We are interested is getting feedback about the
+          usefulness of this bug pattern.
+          For sending feedback, check:
+          </p>
+          <ul>
+            <li><a href="https://github.com/spotbugs/spotbugs/blob/master/CONTRIBUTING.md">contributing guideline</a></li>
+            <li><a href="https://github.com/spotbugs/discuss/issues?q=">malinglist</a></li>
+          </ul>
+
+          <p>
+          In particular,
+          the false-positive suppression heuristics for this
+          bug pattern have not been extensively tuned, so
+          reports about false positives are helpful to us.
+          </p>
+
+          <p>
+          See Weimer and Necula, <i>Finding and Preventing Run-Time Error Handling Mistakes</i>, for
+          a description of the analysis technique.
+          </p>
+          
+      ]]></Details>
+  </BugPattern>
+  <BugPattern type="OBL_UNSATISFIED_OBLIGATION" abbrev="OBL" category="EXPERIMENTAL">
+    <ShortDescription>Method may fail to clean up stream or resource</ShortDescription>
+    <Details><![CDATA[
+          
+          <p>
+          This method may fail to clean up (close, dispose of) a stream,
+          database object, or other
+          resource requiring an explicit cleanup operation.
+          </p>
+
+          <p>
+          In general, if a method opens a stream or other resource,
+          the method should use a try/finally block to ensure that
+          the stream or resource is cleaned up before the method
+          returns.
+          </p>
+
+          <p>
+          This bug pattern is essentially the same as the
+          OS_OPEN_STREAM and ODR_OPEN_DATABASE_RESOURCE
+          bug patterns, but is based on a different
+          (and hopefully better) static analysis technique.
+          We are interested is getting feedback about the
+          usefulness of this bug pattern.
+          For sending feedback, check:
+          </p>
+          <ul>
+            <li><a href="https://github.com/spotbugs/spotbugs/blob/master/CONTRIBUTING.md">contributing guideline</a></li>
+            <li><a href="https://github.com/spotbugs/discuss/issues?q=">malinglist</a></li>
+          </ul>
+
+          <p>
+          In particular,
+          the false-positive suppression heuristics for this
+          bug pattern have not been extensively tuned, so
+          reports about false positives are helpful to us.
+          </p>
+
+          <p>
+          See Weimer and Necula, <i>Finding and Preventing Run-Time Error Handling Mistakes</i>, for
+          a description of the analysis technique.
+          </p>
+          
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="EI">
+    <Description>Méthode renvoyant un tableau, ce qui peut exposer sa représentation interne</Description>
+  </BugCode>
+  <BugCode abbrev="UwF">
+    <Description>Champ jamais alimenté</Description>
+  </BugCode>
+  <BugCode abbrev="OBL">
+    <Description>Unsatisfied obligation to clean up stream or resource</Description>
+  </BugCode>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <BugCode abbrev="ODR">
+    <Description>Ressource de base données pas toujours fermée dans tous les chemins d&apos;éxécution</Description>
+  </BugCode>
+  <BugCode abbrev="EI2">
+    <Description>Stockage d&apos;une référence vers un objet modifiable</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 2 Sep 2022 00:21:19 +0200" total_classes="19" referenced_classes="66" total_bugs="26" total_size="670" num_packages="10" java_version="11.0.15" vm_version="11.0.15+10-b2043.56" cpu_seconds="26.02" clock_seconds="251.19" peak_mbytes="2596.22" alloc_mbytes="2022.00" gc_seconds="0.03" priority_2="25" priority_1="1">
+    <FileStats path="com/parkit/parkingsystem/App.java" bugCount="0" size="10"/>
+    <FileStats path="com/parkit/parkingsystem/FareCalculatorServiceTest.java" bugCount="0" size="110"/>
+    <FileStats path="com/parkit/parkingsystem/ParkingServiceTest.java" bugCount="0" size="27"/>
+    <FileStats path="com/parkit/parkingsystem/config/DataBaseConfig.java" bugCount="1" size="34" bugHash="99a7250d549e67a58e7cd73fc8370a7c"/>
+    <FileStats path="com/parkit/parkingsystem/constants/DBConstants.java" bugCount="0" size="9"/>
+    <FileStats path="com/parkit/parkingsystem/constants/Fare.java" bugCount="0" size="5"/>
+    <FileStats path="com/parkit/parkingsystem/constants/ParkingType.java" bugCount="0" size="12"/>
+    <FileStats path="com/parkit/parkingsystem/dao/ParkingSpotDAO.java" bugCount="3" size="38" bugHash="eea36df102ed8c93f210cff1404a5ba6"/>
+    <FileStats path="com/parkit/parkingsystem/dao/TicketDAO.java" bugCount="9" size="74" bugHash="91b797db183d5bafc70ab2b23b929a68"/>
+    <FileStats path="com/parkit/parkingsystem/integration/ParkingDataBaseIT.java" bugCount="1" size="70" bugHash="b0ce76802ddf86adc4aed9c8c43f09f1"/>
+    <FileStats path="com/parkit/parkingsystem/integration/config/DataBaseTestConfig.java" bugCount="1" size="34" bugHash="7b7eaff3e38f8af21c2dc280cb3fecb3"/>
+    <FileStats path="com/parkit/parkingsystem/integration/service/DataBasePrepareService.java" bugCount="2" size="15" bugHash="a779ff5e8e70e294af275d6c3be04c3a"/>
+    <FileStats path="com/parkit/parkingsystem/model/ParkingSpot.java" bugCount="0" size="32"/>
+    <FileStats path="com/parkit/parkingsystem/model/Ticket.java" bugCount="6" size="39" bugHash="8ef39a6b0d3d61402e4f9cb8e32fbc63"/>
+    <FileStats path="com/parkit/parkingsystem/service/FareCalculatorService.java" bugCount="2" size="20" bugHash="28c1ca8bc4e42d1c1bb6a14e4f1161ad"/>
+    <FileStats path="com/parkit/parkingsystem/service/InteractiveShell.java" bugCount="0" size="34"/>
+    <FileStats path="com/parkit/parkingsystem/service/ParkingService.java" bugCount="0" size="83"/>
+    <FileStats path="com/parkit/parkingsystem/util/InputReaderUtil.java" bugCount="1" size="24" bugHash="b8aeca1950e6082b21098c7211936802"/>
+    <PackageStats package="com.parkit.parkingsystem" total_bugs="0" total_types="3" total_size="147">
+      <ClassStats class="com.parkit.parkingsystem.App" sourceFile="App.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.parkit.parkingsystem.FareCalculatorServiceTest" sourceFile="FareCalculatorServiceTest.java" interface="false" size="110" bugs="0"/>
+      <ClassStats class="com.parkit.parkingsystem.ParkingServiceTest" sourceFile="ParkingServiceTest.java" interface="false" size="27" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.parkit.parkingsystem.config" total_bugs="1" total_types="1" total_size="34" priority_2="1">
+      <ClassStats class="com.parkit.parkingsystem.config.DataBaseConfig" sourceFile="DataBaseConfig.java" interface="false" size="34" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="com.parkit.parkingsystem.constants" total_bugs="0" total_types="3" total_size="26">
+      <ClassStats class="com.parkit.parkingsystem.constants.DBConstants" sourceFile="DBConstants.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.parkit.parkingsystem.constants.Fare" sourceFile="Fare.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.parkit.parkingsystem.constants.ParkingType" sourceFile="ParkingType.java" interface="false" size="12" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.parkit.parkingsystem.dao" total_bugs="12" total_types="2" total_size="112" priority_2="12">
+      <ClassStats class="com.parkit.parkingsystem.dao.ParkingSpotDAO" sourceFile="ParkingSpotDAO.java" interface="false" size="38" bugs="3" priority_2="3"/>
+      <ClassStats class="com.parkit.parkingsystem.dao.TicketDAO" sourceFile="TicketDAO.java" interface="false" size="74" bugs="9" priority_2="9"/>
+    </PackageStats>
+    <PackageStats package="com.parkit.parkingsystem.integration" total_bugs="1" total_types="1" total_size="70" priority_2="1">
+      <ClassStats class="com.parkit.parkingsystem.integration.ParkingDataBaseIT" sourceFile="ParkingDataBaseIT.java" interface="false" size="70" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="com.parkit.parkingsystem.integration.config" total_bugs="1" total_types="1" total_size="34" priority_2="1">
+      <ClassStats class="com.parkit.parkingsystem.integration.config.DataBaseTestConfig" sourceFile="DataBaseTestConfig.java" interface="false" size="34" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="com.parkit.parkingsystem.integration.service" total_bugs="2" total_types="1" total_size="15" priority_2="2">
+      <ClassStats class="com.parkit.parkingsystem.integration.service.DataBasePrepareService" sourceFile="DataBasePrepareService.java" interface="false" size="15" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <PackageStats package="com.parkit.parkingsystem.model" total_bugs="6" total_types="2" total_size="71" priority_2="6">
+      <ClassStats class="com.parkit.parkingsystem.model.ParkingSpot" sourceFile="ParkingSpot.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="com.parkit.parkingsystem.model.Ticket" sourceFile="Ticket.java" interface="false" size="39" bugs="6" priority_2="6"/>
+    </PackageStats>
+    <PackageStats package="com.parkit.parkingsystem.service" total_bugs="2" total_types="4" total_size="137" priority_2="2">
+      <ClassStats class="com.parkit.parkingsystem.service.FareCalculatorService" sourceFile="FareCalculatorService.java" interface="false" size="16" bugs="2" priority_2="2"/>
+      <ClassStats class="com.parkit.parkingsystem.service.FareCalculatorService$1" sourceFile="FareCalculatorService.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="com.parkit.parkingsystem.service.InteractiveShell" sourceFile="InteractiveShell.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="com.parkit.parkingsystem.service.ParkingService" sourceFile="ParkingService.java" interface="false" size="83" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.parkit.parkingsystem.util" total_bugs="1" total_types="1" total_size="24" priority_1="1">
+      <ClassStats class="com.parkit.parkingsystem.util.InputReaderUtil" sourceFile="InputReaderUtil.java" interface="false" size="24" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="393" invocations="2" avgMicrosecondsPerInvocation="196833" maxMicrosecondsPerInvocation="225003" standardDeviationMicrosecondsPerInvocation="28172"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="260" invocations="582" avgMicrosecondsPerInvocation="447" maxMicrosecondsPerInvocation="15154" standardDeviationMicrosecondsPerInvocation="995"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="77" invocations="587" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="1806" standardDeviationMicrosecondsPerInvocation="122"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="58" invocations="66" avgMicrosecondsPerInvocation="883" maxMicrosecondsPerInvocation="10449" standardDeviationMicrosecondsPerInvocation="1770"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="47" invocations="99" avgMicrosecondsPerInvocation="482" maxMicrosecondsPerInvocation="11428" standardDeviationMicrosecondsPerInvocation="1175"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="46" invocations="99" avgMicrosecondsPerInvocation="464" maxMicrosecondsPerInvocation="2682" standardDeviationMicrosecondsPerInvocation="594"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="43" invocations="105" avgMicrosecondsPerInvocation="412" maxMicrosecondsPerInvocation="13299" standardDeviationMicrosecondsPerInvocation="1301"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="43" invocations="66" avgMicrosecondsPerInvocation="654" maxMicrosecondsPerInvocation="7329" standardDeviationMicrosecondsPerInvocation="1219"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="42" invocations="103" avgMicrosecondsPerInvocation="411" maxMicrosecondsPerInvocation="7344" standardDeviationMicrosecondsPerInvocation="825"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="41" invocations="99" avgMicrosecondsPerInvocation="420" maxMicrosecondsPerInvocation="13276" standardDeviationMicrosecondsPerInvocation="1334"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="34" invocations="195" avgMicrosecondsPerInvocation="176" maxMicrosecondsPerInvocation="3340" standardDeviationMicrosecondsPerInvocation="348"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="30" invocations="99" avgMicrosecondsPerInvocation="309" maxMicrosecondsPerInvocation="2528" standardDeviationMicrosecondsPerInvocation="405"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="30" invocations="113" avgMicrosecondsPerInvocation="267" maxMicrosecondsPerInvocation="15474" standardDeviationMicrosecondsPerInvocation="1468"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="29" invocations="99" avgMicrosecondsPerInvocation="300" maxMicrosecondsPerInvocation="19334" standardDeviationMicrosecondsPerInvocation="1926"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="26" invocations="66" avgMicrosecondsPerInvocation="402" maxMicrosecondsPerInvocation="4507" standardDeviationMicrosecondsPerInvocation="828"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="24" invocations="66" avgMicrosecondsPerInvocation="370" maxMicrosecondsPerInvocation="9167" standardDeviationMicrosecondsPerInvocation="1166"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="22" invocations="78" avgMicrosecondsPerInvocation="291" maxMicrosecondsPerInvocation="1435" standardDeviationMicrosecondsPerInvocation="309"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="20" invocations="19" avgMicrosecondsPerInvocation="1089" maxMicrosecondsPerInvocation="5655" standardDeviationMicrosecondsPerInvocation="1597"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="17" invocations="66" avgMicrosecondsPerInvocation="266" maxMicrosecondsPerInvocation="8331" standardDeviationMicrosecondsPerInvocation="1052"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

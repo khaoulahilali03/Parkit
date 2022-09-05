@@ -10,6 +10,7 @@ import com.parkit.parkingsystem.model.ParkingSpot;
 import com.parkit.parkingsystem.model.Ticket;
 import com.parkit.parkingsystem.service.ParkingService;
 import com.parkit.parkingsystem.util.InputReaderUtil;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
@@ -21,6 +22,7 @@ import static java.lang.Math.round;
 import static java.time.temporal.ChronoUnit.SECONDS;
 import static org.mockito.Mockito.when;
 
+@SuppressFBWarnings("UWF_UNWRITTEN_FIELD")
 @ExtendWith(MockitoExtension.class)
 public class ParkingDataBaseIT {
 

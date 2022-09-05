@@ -1,10 +1,12 @@
 package com.parkit.parkingsystem.config;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.sql.*;
 
+@SuppressFBWarnings("DMI_CONSTANT_DB_PASSWORD")
 public class DataBaseConfig {
 
     private static final Logger logger = LogManager.getLogger("DataBaseConfig");

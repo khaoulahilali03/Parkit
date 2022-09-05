@@ -1,8 +1,11 @@
 package com.parkit.parkingsystem.model;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
 import java.util.Calendar;
 import java.util.Date;
 
+@SuppressFBWarnings("EI_EXPOSE_REP")
 public class Ticket {
     private int id;
     private ParkingSpot parkingSpot;
